@@ -1,0 +1,16 @@
+doctype html
+html(lang="fr")
+  head
+    title My Cars
+
+  body
+    h1 Welcome on My Cars
+    p This application will help you manage your cars!
+
+    ul
+        - for(car in cars) {
+            li= cars[car].brand
+                | &nbsp;- (
+                a(href=cars[car].brand) link
+                | )
+        - }
