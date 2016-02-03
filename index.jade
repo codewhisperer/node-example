@@ -1,5 +1,5 @@
 doctype html
-html(lang="fr")
+html(lang="en")
   head
     title My Cars
 
@@ -10,7 +10,4 @@ html(lang="fr")
     ul
         - for(car in cars) {
             li= cars[car].brand
-                | &nbsp;- (
-                a(href=cars[car].brand) link
-                | )
         - }
